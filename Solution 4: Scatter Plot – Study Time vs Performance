@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+exam_scores = [50, 55, 60, 65, 70, 78, 85, 90]
+
+plt.figure()
+plt.scatter(study_hours, exam_scores)
+plt.xlabel("Study Hours")
+plt.ylabel("Exam Score")
+plt.title("Study Time vs Exam Performance")
+plt.show()
