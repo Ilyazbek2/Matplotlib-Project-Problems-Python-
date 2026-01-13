@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+days = list(range(1, 8))
+
+organic = [120, 130, 125, 140, 150, 160, 170]
+ads = [80, 90, 85, 95, 100, 110, 120]
+social = [60, 70, 65, 75, 80, 90, 95]
+
+plt.figure()
+plt.plot(days, organic, label="Organic")
+plt.plot(days, ads, label="Ads")
+plt.plot(days, social, label="Social Media")
+
+plt.xlabel("Day")
+plt.ylabel("Visitors")
+plt.title("Website Traffic by Source")
+plt.legend()
+plt.show()
