@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import random
+
+scores = [random.randint(40, 100) for _ in range(100)]
+average_score = sum(scores) / len(scores)
+
+plt.figure()
+plt.hist(scores, bins=10)
+plt.axvline(average_score)
+plt.xlabel("Score")
+plt.ylabel("Number of Students")
+plt.title("Exam Score Distribution")
+plt.show()
