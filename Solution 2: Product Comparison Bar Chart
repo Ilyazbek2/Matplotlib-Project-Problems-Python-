@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+products = ["Laptop", "Phone", "Tablet", "Monitor", "Headphones"]
+revenue = [50000, 75000, 30000, 20000, 15000]
+
+plt.figure()
+bars = plt.bar(products, revenue)
+plt.xlabel("Product")
+plt.ylabel("Revenue")
+plt.title("Revenue by Product")
+
+for bar in bars:
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2, height,
+             f"{height}", ha='center', va='bottom')
+
+plt.show()
